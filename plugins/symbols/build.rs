@@ -19,7 +19,7 @@ fn main() {
                 .and_then(char::from_u32)
                 .is_some()
         {
-            writeln!(file, "(r#\"{}\"#, \"\u{{{}}}\"),", fields[1], fields[0]).unwrap();
+            writeln!(file, "(r#\"{}\"#, \"\u{{}}\"),", fields[1], fields[0]).unwrap();
         }
     });
 
